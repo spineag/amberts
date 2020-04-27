@@ -12,7 +12,7 @@ export class StartMenuComponent implements OnInit {
   constructor(private iconRegistry: MatIconRegistry, private sanitizer: DomSanitizer) { 
     iconRegistry.addSvgIcon(
         "amberts-logo",
-        sanitizer.bypassSecurityTrustResourceUrl('assets/svg/logo/amberts-logo.svg'));
+        sanitizer.bypassSecurityTrustResourceUrl('https://raw.githubusercontent.com/spineag/amberts/6ac5e6f09286cf4bcd75ddfab0654a0b18dbf1ed/assets/svg/logo/amberts-logo.svg'));
         // sanitizer.bypassSecurityTrustResourceUrl('https://upload.wikimedia.org/wikipedia/commons/2/21/Speaker_Icon.svg'));
   }
 

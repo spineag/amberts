@@ -1,2 +1,20 @@
 /* Add application styles & imports to this file! */
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+.ats-color1 { color:#2a2e43; }      .ats-bg-color1 { background-color:#2a2e43; }
+.ats-color2 { color:#454f63; }      .ats-bg-color2 { background-color:#454f63; }
+.ats-color3 { color:#78849e; }      .ats-bg-color3 { background-color:#78849e; }
+.ats-color4 { color:#989898; }      .ats-bg-color4 { background-color:#989898; } 
+.ats-color5 { color:#bcbcbc; }      .ats-bg-color5 { background-color:#bcbcbc; }
+.ats-color6 { color:#eaeaea; }      .ats-bg-color6 { background-color:#eaeaea; }
+.ats-color7 { color:#ffffff; }      .ats-bg-color7 { background-color:#ffffff; }
+.ats-color8 { color:#665eff; }      .ats-bg-color8 { background-color:#665eff; }
+.ats-color9 { color:#5773ff; }      .ats-bg-color9 { background-color:#5773ff; }
+.ats-color10{ color:#3497fd; }      .ats-bg-color10{ background-color:#3497fd; }
+.ats-color11{ color:#3acce1; }      .ats-bg-color11{ background-color:#3acce1; }
+.ats-color12{ color:#c840e9; }      .ats-bg-color12{ background-color:#c840e9; }
+.ats-color13{ color:#ff4f9a; }      .ats-bg-color13{ background-color:#ff4f9a; }
+.ats-color14{ color:#ff6565; }      .ats-bg-color14{ background-color:#ff6565; }
+.ats-color15{ color:#ff9057; }      .ats-bg-color15{ background-color:#ff9057; }
+.ats-color16{ color:#ffb900; }      .ats-bg-color16{ background-color:#ffb900; }
+.ats-color17{ color:#5fe3a1; }      .ats-bg-color17{ background-color:#5fe3a1; }

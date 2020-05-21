@@ -11,7 +11,7 @@ export class StartMenuItemComponent implements OnInit {
   @Input() iconClass: String;   
   @Input() bgClass: String; 
   @Input() textClass: String;
-  @Input() url: String; 
+  @Input() urlPage: String; 
   
   constructor() { 
     

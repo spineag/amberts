@@ -15,10 +15,12 @@ import { UserListComponent } from './temp/user-list/user-list.component';
 import { UserCreateComponent } from './temp/user-create/user-create.component';
 import { UserSingleComponent } from './temp/user-single/user-single.component';
 import { UserEditComponent } from './temp/user-edit/user-edit.component';
+import { StartMenuItemComponent } from './start-menu/start-item-menu/start-menu-item.component';
 
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/observable/throw';
+
 
 
 
@@ -28,14 +30,8 @@ import 'rxjs/add/observable/throw';
     routing, MatIconModule
   ],
   declarations: [
-    AppComponent,
-    StartComponent,
-    UserListComponent,
-    UserCreateComponent,
-    UserSingleComponent,
-    UserEditComponent,
-    StartMenuComponent
-  ],
+    AppComponent,StartComponent,UserListComponent,UserCreateComponent,UserSingleComponent,
+    UserEditComponent,StartMenuComponent,StartMenuItemComponent],
   providers: [
     UserService
   ],

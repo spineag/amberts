@@ -18,3 +18,10 @@
 .ats-color15{ color:#ff9057; }      .ats-bg-color15{ background-color:#ff9057; }
 .ats-color16{ color:#ffb900; }      .ats-bg-color16{ background-color:#ffb900; }
 .ats-color17{ color:#5fe3a1; }      .ats-bg-color17{ background-color:#5fe3a1; }
+
+.outer_main_container{
+  height:97vh;
+}
+.outer_main_undercontainer{
+  height: 100%;
+}

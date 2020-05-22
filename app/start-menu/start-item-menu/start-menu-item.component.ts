@@ -8,7 +8,6 @@ import { Component, OnInit, Input } from '@angular/core';
 export class StartMenuItemComponent implements OnInit {
   @Input() iconUrl: String;
   @Input() text: String;
-  @Input() iconClass: String;   
   @Input() bgClass: String; 
   @Input() textClass: String;
   @Input() urlPage: String; 

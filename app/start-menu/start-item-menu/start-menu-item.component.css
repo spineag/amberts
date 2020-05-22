@@ -1,3 +1,15 @@
-.item-menu{
-  
+.start-menu-item-box{
+  position: relative;
+}
+.start-menu-item-box:before{
+  content: "";
+	display: block;
+	padding-top: 100%;
+}
+.start-menu-item{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }

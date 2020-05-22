@@ -6,8 +6,8 @@
   height: 100%;
 }
 #logo_div mat-icon{
-  width:50vw;
-  height:20vw;
+  width:60vw;
+  height:30vw;
 }
 #grid_menu_div{
   display: grid;
@@ -15,5 +15,6 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 3%;
   width:100%;
-  margin:3%;
+  margin:5%;
+  margin-bottom:0;
 }

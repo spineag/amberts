@@ -8,7 +8,7 @@
 .ats-color5 { color:#bcbcbc; }      .ats-bg-color5 { background-color:#bcbcbc; }
 .ats-color6 { color:#eaeaea; }      .ats-bg-color6 { background-color:#eaeaea; }
 .ats-color7 { color:#ffffff; }      .ats-bg-color7 { background-color:#ffffff; }
-.ats-color8 { color:#665eff; }      .ats-bg-color8 { background-color:#665eff; }
+.ats-color8 { color:#5651C7; }      .ats-bg-color8 { background-color:#5651C7; }
 .ats-color9 { color:#5773ff; }      .ats-bg-color9 { background-color:#5773ff; }
 .ats-color10{ color:#3497fd; }      .ats-bg-color10{ background-color:#3497fd; }
 .ats-color11{ color:#3acce1; }      .ats-bg-color11{ background-color:#3acce1; }
@@ -21,6 +21,7 @@
 
 .outer_main_container{
   height:97vh;
+  overflow: hidden;
 }
 .outer_main_undercontainer{
   height: 100%;

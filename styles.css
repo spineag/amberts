@@ -18,11 +18,21 @@
 .ats-color15{ color:#ff9057; }      .ats-bg-color15{ background-color:#ff9057; }
 .ats-color16{ color:#ffb900; }      .ats-bg-color16{ background-color:#ffb900; }
 .ats-color17{ color:#5fe3a1; }      .ats-bg-color17{ background-color:#5fe3a1; }
+.ats-color18{ color:#fbfbfb; }      .ats-bg-color18{ background-color:#fbfbfb; }
 
 .outer_main_container{
-  height:97vh;
+  height:100vh;
   overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: #fbfbfb;
 }
 .outer_main_undercontainer{
   height: 100%;
+  margin:0;
+  padding:0;
+}
+body{
+  padding:0;
+  margin:0;
 }

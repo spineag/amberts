@@ -2,9 +2,7 @@ import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { StartComponent } from './start-menu/start.component';
 import { StartMenuComponent } from './start-menu/start-menu.component';
-import { UserCreateComponent } from './temp/user-create/user-create.component';
-import { UserSingleComponent } from './temp/user-single/user-single.component';
-import { UserEditComponent } from './temp/user-edit/user-edit.component';
+import { PageListEventsComponent } from './page-list-events/page-list-events.component';
 
 export const routes: Routes = [
   {
@@ -21,17 +19,17 @@ export const routes: Routes = [
         component: StartMenuComponent
       },
       {
-        path: 'create',
-        component: UserCreateComponent
-      },
-      {
-        path: ':id',
-        component: UserSingleComponent
-      },
-      {
-        path: ':id/edit',
-        component: UserEditComponent
+        path: 'list-events',
+        component: PageListEventsComponent
       }
+      // {
+      //   path: ':id',
+      //   component: UserSingleComponent
+      // },
+      // {
+      //   path: ':id/edit',
+      //   component: UserEditComponent
+      // }
     ]
   }
 ];

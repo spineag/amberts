@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-start-menu-item',
+  selector: 'start-menu-item',
   templateUrl: './start-menu-item.component.html',
   styleUrls: ['./start-menu-item.component.css']
 })

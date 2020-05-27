@@ -1,5 +1,6 @@
 .start-menu-item-box{
   position: relative;
+  cursor: pointer;
 }
 .start-menu-item-box:before{
   content: "";

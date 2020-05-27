@@ -17,10 +17,6 @@ export const routes: Routes = [
       {
         path: '',
         component: StartMenuComponent
-      },
-      {
-        path: 'list-events',
-        component: PageListEventsComponent
       }
       // {
       //   path: ':id',
@@ -31,6 +27,10 @@ export const routes: Routes = [
       //   component: UserEditComponent
       // }
     ]
+  },
+  {
+    path: 'list-events',
+        component: PageListEventsComponent
   }
 ];
 

@@ -16,10 +16,9 @@
 }
 div mat-icon{
   color:white;
-  width:10vw;
-  height:10vw;
+  width:5vh;
+  height:5vh;
 }
 .mat-icon-item{
-  font-size: 10vw;
-  width: 5vw;
+  font-size: 5vh;
 }

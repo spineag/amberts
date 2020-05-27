@@ -1,6 +1,8 @@
 /* Add application styles & imports to this file! */
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
+/* Adobe XD: 45x80 */
+
 .ats-color1 { color:#2a2e43; }      .ats-bg-color1 { background-color:#2a2e43; }
 .ats-color2 { color:#454f63; }      .ats-bg-color2 { background-color:#454f63; }
 .ats-color3 { color:#78849e; }      .ats-bg-color3 { background-color:#78849e; }
@@ -18,14 +20,14 @@
 .ats-color15{ color:#ff9057; }      .ats-bg-color15{ background-color:#ff9057; }
 .ats-color16{ color:#ffb900; }      .ats-bg-color16{ background-color:#ffb900; }
 .ats-color17{ color:#5fe3a1; }      .ats-bg-color17{ background-color:#5fe3a1; }
-.ats-color18{ color:#fbfbfb; }      .ats-bg-color18{ background-color:#fbfbfb; }
+.ats-color18{ color:#fdfdfd; }      .ats-bg-color18{ background-color:#fdfdfd; }
 
 .outer_main_container{
   height:100vh;
   overflow: hidden;
   margin: 0;
   padding: 0;
-  background-color: #fbfbfb;
+  background-color: #fdfdfd;
 }
 .outer_main_undercontainer{
   height: 100%;

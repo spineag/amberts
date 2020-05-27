@@ -4,17 +4,18 @@
   justify-content: space-around;
   align-items: center;
   height: 100%;
-  padding:3vw;
+  padding:3vh;
 }
 #logo_div mat-icon{
-  width:65vw;
-  height:30vw;
+  width:30vh;
+  height:15vh;
+  color: #454f63;
 }
 #grid_menu_div{
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 2vw;
+  grid-gap: 3vh;
   width:100%;
   margin-bottom:0;
 }

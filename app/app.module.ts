@@ -12,6 +12,7 @@ import { StartComponent } from './start-menu/start.component';
 import { StartMenuComponent } from './start-menu/start-menu.component';
 import { PageListEventsComponent } from './page-list-events/page-list-events.component';
 import { StartMenuItemComponent } from './start-menu/start-item-menu/start-menu-item.component';
+import { TopLineTabsComponent } from './components/top-line-tabs/top-line-tabs.component';
 
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
@@ -24,7 +25,7 @@ import 'rxjs/add/observable/throw';
     routing, MatIconModule
   ],
   declarations: [
-    AppComponent,StartComponent,StartMenuComponent,StartMenuItemComponent,PageListEventsComponent],
+    AppComponent,StartComponent,StartMenuComponent,StartMenuItemComponent,PageListEventsComponent,TopLineTabsComponent],
   providers: [
     UserService
   ],

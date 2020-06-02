@@ -4,8 +4,6 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MatIconModule } from '@angular/material/icon';
 
-import { UserService } from './shared/services/user.service';
-
 import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 import { StartComponent } from './start-menu/start.component';
@@ -26,10 +24,9 @@ import 'rxjs/add/observable/throw';
     routing, MatIconModule
   ],
   declarations: [
-export class BottomLineMenuComponent implements OnInit {
     AppComponent,StartComponent,StartMenuComponent,StartMenuItemComponent,PageListEventsComponent,TopLineTabsComponent,BottomLineMenuComponent],
   providers: [
-    UserService
+   
   ],
   bootstrap:    [ AppComponent ]
 })

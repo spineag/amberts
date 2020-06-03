@@ -11,3 +11,43 @@
   padding: 1vh 3vh;
   height:4vh;
 }
+/* https://codepen.io/ejsado/pen/gPVgVv */
+input[name=css-tabs] {
+  display: none;
+}
+#tabs {
+	width: 100%;
+	height: 100%;
+}
+#tabs::after {
+	content: "";
+	display: block;
+	position: absolute;
+	z-index: 0;
+	height: 4vh;
+	width: 50vw;
+	background: var(--color15);
+	transition: transform 400ms;
+}
+#tabs label {
+	position: relative;
+	z-index: 100;
+	display: block;
+	float: left;
+  font-size: 2.3vh;
+	text-align: center;
+	width: 50%;
+	height: 100%;
+	cursor: pointer;
+}
+
+#radio1:checked ~ #tabs::after {
+	transform: translateX(0);
+}
+#radio2:checked ~ #tabs::after {
+	transform: translateX(50vw);
+}
+#radio1:checked ~ #content #content1, #radio2:checked ~ #content #content2 {
+	transform: translateY(0);
+	opacity: 1;
+}

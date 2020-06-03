@@ -44,6 +44,10 @@
 .ats-color17{ color:var(--color17); }      .ats-bg-color17{ background-color:var(--color17); }
 .ats-color18{ color:var(--color18); }      .ats-bg-color18{ background-color:var(--color18); }
 
+.medium {font-weight:400;}
+.bold {font-weight:700;}
+.regular {font-weight:300;}
+
 .outer_main_container{
   height:100vh;
   overflow: hidden;

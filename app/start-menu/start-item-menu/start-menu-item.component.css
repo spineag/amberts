@@ -14,11 +14,9 @@
   bottom: 0;
   right: 0;
 }
-div mat-icon{
-  color:white;
-  width:5vh;
-  height:5vh;
-}
 .mat-icon-item{
   font-size: 5vh;
+  color:var(--color18);
+  width:5vh;
+  height:5vh;
 }

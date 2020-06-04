@@ -63,8 +63,10 @@
   min-width: 35vh;
   background-color: var(--color18);
   font-family: Roboto;
+  overflow:hidden;
 }
 body{
   padding:0;
   margin:0;
+  overflow:hidden;
 }

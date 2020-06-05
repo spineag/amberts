@@ -1,6 +1,31 @@
 .bottom-line-bg{
-  height: 6vh;
-  position:absolute;
+  height: 8vh;
+  position:fixed;
   bottom:0;
-  width:100%;
+  /*left:0;
+  /right:0;*/
+  width:60vh;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.mat-icon-item{
+  font-size: 5.5vh;
+  color:var(--color18);
+  width:6vh;
+  height:6vh;
+}
+.mat-icon-item:hover{
+  cursor: pointer;
+}
+.circle-plus{
+  height: 9vh;
+  width: 9vh;
+  border-radius: 50%;
+  display: inline-block;
+  font-size:8vh;
+  margin-right:3vh;
+  margin-top:-4.5vh;
+  text-align: center;
+  box-shadow: .1vh .1vh .5vh rgba(0,0,0,0.5);
 }

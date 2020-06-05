@@ -59,8 +59,7 @@
   height: 100%;
   margin:0 auto;
   padding:0;
-  max-width:65vh;
-  min-width: 35vh;
+  width:60vh;
   background-color: var(--color18);
   font-family: Roboto;
   overflow:hidden;

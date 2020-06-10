@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { StartComponent } from './start-menu/start.component';
 import { StartMenuComponent } from './start-menu/start-menu.component';
 import { PageListEventsComponent } from './page-list-events/page-list-events.component';
+import { PageCreateEventComponent } from './page-create-event/page-create-event.component';
 
 export const routes: Routes = [
   {
@@ -31,6 +32,10 @@ export const routes: Routes = [
   {
     path: 'list-events',
         component: PageListEventsComponent
+  },
+  {
+    path: 'create-event',
+        component: PageCreateEventComponent
   }
 ];
 

@@ -4,8 +4,12 @@ export class Action {
   short_description: String;
   description: String;
   type: Number;
-  dateStart: Date;
-  dateEnd: Date;
+  dateStartTotal: Date; // date + time
+  dateEndTotal: Date;   // date + time
+  dayStart: String;     // without time
+  dayEnd: String;       // without time
+  timeStart: String;    // only time
+  timeEnd: String;      // only time
   route: String;
 
   speedRange: String; // 5:30 - 6:00 hv/km OR 20-25 km/hour

@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MatIconModule } from '@angular/material/icon';
 
-import { ActionService } from './shared/services/action.service';
+import { ActionService } from './shared/service/action.service';
 
 import { routing } from './app.routing';
 import { AppComponent } from './app.component';

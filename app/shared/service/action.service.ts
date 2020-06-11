@@ -32,8 +32,8 @@ export class ActionService {
 
   sortActions():void {
     this.actions.sort((a:Action, b:Action)=>{
-      if (a.dateStart < b.dateStart) return -1;
-      if (a.dateEnd > b.dateStart) return 1;
+      if (a.dateStartTotal < b.dateStartTotal) return -1;
+      if (a.dateEndTotal > b.dateStartTotal) return 1;
       return 0;
     });
   }
@@ -55,7 +55,7 @@ export class ActionService {
         break;
       }
     }
-    if (act) return act;
+    if (act) return new Observable(act);
     else return this.getAction(id);
   }
 
@@ -124,7 +124,7 @@ export class ActionService {
     return Observable.throw(errorMessage)
   }
 
-  private generateTestActions():void {
-
+  private generateTestActions():void {  
+    // https://raw.githubusercontent.com/spineag/amberts/master/assets/server_temp/actions.json
   }
 }

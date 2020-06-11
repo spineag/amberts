@@ -57,10 +57,10 @@ input[name=css-tabs] {
   cursor:pointer;
 }
 #radio1:checked ~ #tabs::before {
-	transform: translateX(-5%) skew(15deg,0);
+	transform: translateX(-5%) skew(30deg,0);
 }
 #radio2:checked ~ #tabs::before {
-	transform: translateX(85%) skew(-15deg,0);
+	transform: translateX(85%) skew(-30deg,0);
 }
 /* #radio1:checked ~ #content #content1, #radio2:checked ~ #content #content2 {
 	transform: translateY(0);

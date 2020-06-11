@@ -1,0 +1,31 @@
+.bottom-line-bg{
+  height: 8vh;
+  position:fixed;
+  bottom:0;
+  width:60vh;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.mat-icon-item{
+  font-size: 7vh;
+  color:var(--color18);
+  width:8vh;
+  height:8vh;
+  padding: .5vh 3vh;
+  z-index:100;
+}
+.mat-icon-item:hover{
+  cursor: pointer;
+}
+.orange-bg::before {
+	content: "";
+	display: block;
+	position: absolute;
+	z-index: 0;
+	height: 8vh;
+	width: 55%;
+	background: var(--color15);
+  transform: translateX(90%) skew(30deg,0);
+}

@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MatIconModule } from '@angular/material/icon';
 
+import { ActionService } from './shared/services/action.service';
+
 import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 import { StartComponent } from './start-menu/start.component';
@@ -32,7 +34,7 @@ import 'rxjs/add/observable/throw';
     PageListEventsComponent,PageCreateEventComponent,
     TopLineTabsComponent,TopLineComponent,BottomLineMenuComponent,BottomLineSaveCancelComponent],
   providers: [
-   
+    ActionService
   ],
   bootstrap:    [ AppComponent ]
 })

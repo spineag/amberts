@@ -1,0 +1,31 @@
+.top-line-bg{
+  height: 6vh;
+  width:60vh;
+  position:fixed;
+  top:0;
+  overflow: hidden;
+}
+.top-line-title {
+  font-size: 3vh;
+}
+.top-line-bg-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1vh 3vh;
+  height:3.6vh;
+}
+
+.mat-icon-item{
+  font-size: 3.5vh;
+  color:var(--color18);
+  width:5vh;
+  height:5vh;
+  text-align: center;
+}
+.mat-icon-item:hover{
+  cursor: pointer;
+}
+.edit-icon-cont{
+  border-radius: 1vh;
+}

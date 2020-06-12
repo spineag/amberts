@@ -19,6 +19,7 @@ export class BottomLineSaveCancelComponent implements OnInit {
     //... save new action
 
     this.updateActionsList.emit();
+    //https://dzone.com/articles/understanding-output-and-eventemitter-in-angular
   }
 
 }

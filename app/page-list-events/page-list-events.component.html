@@ -3,53 +3,8 @@
 <div class="action_cont_outer">
 <div class="action_cont">
 
-  <div>
-  0<br>
-  list-events<br>
-  1<br>
-  list-events<br>
-  2<br>
-  list-events<br>
-  3<br>
-  list-events<br>
-  4<br>
-  list-events<br>
-  5<br>
-  list-events<br>
-  6<br>
-  list-events<br>
-  7<br>
-  list-events<br>
-  list-events<br>
-  8<br>
-  list-events<br>
-  9<br>
-  list-events<br>
-  10<br>
-  list-events<br>
-  11<br>
-  list-events<br>
-  12<br>
-  list-events<br>
-  13<br>
-  list-events<br>
-  14<br>
-  list-events<br>
-  list-events<br>
-  15<br>
-  list-events<br>
-  16<br>
-  list-events<br>
-  17<br>
-  list-events<br>
-  18<br>
-  list-events<br>
-  19<br>
-  list-events<br>
-  20<br>
-  list-events<br>
-  21<br>
-  list-events<br>
+  <div *ngFor="let act of arActions">
+    <list-events-item  [action]="act"></list-events-item>
   </div>
 
 </div>

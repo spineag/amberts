@@ -18,6 +18,7 @@ import { TopLineTabsComponent } from './components/top-line-tabs/top-line-tabs.c
 import { TopLineComponent } from './components/top-line/top-line.component';
 import { BottomLineMenuComponent } from './components/bottom-line-menu/bottom-line-menu.component';
 import { BottomLineSaveCancelComponent } from './components/bottom-line-save-cancel/bottom-line-save-cancel.component';
+import { ListEventsItemComponent } from './page-list-events/list-events-item/list-events-item.component';
 
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
@@ -31,7 +32,7 @@ import 'rxjs/add/observable/throw';
   ],
   declarations: [
     AppComponent,StartComponent,StartMenuComponent,StartMenuItemComponent,
-    PageListEventsComponent,PageCreateEventComponent,
+    PageListEventsComponent,PageCreateEventComponent,ListEventsItemComponent,
     TopLineTabsComponent,TopLineComponent,BottomLineMenuComponent,BottomLineSaveCancelComponent],
   providers: [
     ActionService

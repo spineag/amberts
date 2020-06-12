@@ -12,12 +12,12 @@ export class ActionService {
     this.generateTestActions();
   }
 
-  getActions(): Observable<Action[]> {   // also release partial get actions. Example: first 20, then next 20, and next...
-    return this.http.get(this.API_URL)
-      .map(res => res.data)
-      .map(actions => actions.map(this.toAction))
-      .catch(this.handleError);
-  }
+  // getActions(): Observable<Action[]> {   // need partial loading
+  //   return this.http.get(this.API_URL)
+  //     .map(res => res.data)
+  //     .map(actions => actions.map(this.toAction))
+  //     .catch(this.handleError);
+  // }
   getActionsLocal():Array<Action> {
     return this.actions;
   }
@@ -25,6 +25,15 @@ export class ActionService {
   addActionLocal(act:Action):void {    // use for test without server
     this.actions.push(act);
     this.sortActions();
+  }
+
+  deleteActionLocal(id:number){
+    for (let i:number=0;i<this.actions.length;i++){
+      if (this.actions[i].id==id){
+        this.actions.splice(i,1);
+        break;
+      }
+    }
   }
 
   sortActions():void {
@@ -35,41 +44,29 @@ export class ActionService {
     });
   }
 
-  getAction(id: number): Observable<Action> {
-    return this.http.get(`${this.API_URL}/${id}`)
-      .map(res => res.data)
-      .map(this.toAction)     // alsp add it to local
-      .catch(this.handleError)
-  }
-  // getActionLocal(id: number): Observable<Action> {
-  //   let act:Action;
-  //   for (let i=0; i<this.actions.length; i++) {
-  //     if (this.actions[i].id == id) {
-  //       act=this.actions[i];
-  //       break;
-  //     }
-  //   }
-  //   if (act) return new Observable(act);
-  //   else return this.getAction(id);
+  // getAction(id: number): Observable<Action> {
+  //   return this.http.get(`${this.API_URL}/${id}`)
+  //     .map(res => res.data)
+  //     .map(this.toAction)     // alsp add it to local
+  //     .catch(this.handleError)
   // }
 
+  // createAction(act: Action): Observable<Action> {
+  //   return this.http.post(this.API_URL, act)
+  //     .map(res => res.data)
+  //     .catch(this.handleError)
+  // }
 
-  createAction(act: Action): Observable<Action> {
-    return this.http.post(this.API_URL, act)
-      .map(res => res.data)
-      .catch(this.handleError)
-  }
+  // updateAction(act: Action): Observable<Action> {
+  //   return this.http.put(`${this.API_URL}/${act.id}`, act)
+  //     .map(res => res.data)
+  //     .catch(this.handleError)
+  // }
 
-  updateAction(act: Action): Observable<Action> {
-    return this.http.put(`${this.API_URL}/${act.id}`, act)
-      .map(res => res.data)
-      .catch(this.handleError)
-  }
-
-  deleteAction(id: number): Observable<any> {
-    return this.http.delete(`${this.API_URL}/${id}`)
-      .catch(this.handleError);
-  }
+  // deleteAction(id: number): Observable<any> {
+  //   return this.http.delete(`${this.API_URL}/${id}`)
+  //     .catch(this.handleError);
+  // }
 
   private toAction(obj:any): Action {
     let action = new Action();
@@ -108,7 +105,6 @@ export class ActionService {
       let error = body.error || JSON.stringify(body);
       errorMessage = `${err.status} - ${err.statusText} || ''} ${err}`;
     } else errorMessage = err.message ? err.message : err.toString();
-
     return Observable.throw(errorMessage)
   }
 

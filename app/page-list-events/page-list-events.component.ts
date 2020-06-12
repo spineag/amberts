@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActionService } from '../shared/service/action.service';
 
 @Component({
   selector: 'page-list-events',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageListEventsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private actions:ActionService) { }
 
   ngOnInit() {}
 

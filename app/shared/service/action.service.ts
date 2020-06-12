@@ -47,17 +47,17 @@ export class ActionService {
       .map(this.toAction)     // alsp add it to local
       .catch(this.handleError)
   }
-  getActionLocal(id: number): Observable<Action> {
-    let act:Action;
-    for (let i=0; i<this.actions.length; i++) {
-      if (this.actions[i].id == id) {
-        act=this.actions[i];
-        break;
-      }
-    }
-    if (act) return new Observable(act);
-    else return this.getAction(id);
-  }
+  // getActionLocal(id: number): Observable<Action> {
+  //   let act:Action;
+  //   for (let i=0; i<this.actions.length; i++) {
+  //     if (this.actions[i].id == id) {
+  //       act=this.actions[i];
+  //       break;
+  //     }
+  //   }
+  //   if (act) return new Observable(act);
+  //   else return this.getAction(id);
+  // }
 
 
   // create a user
@@ -83,25 +83,33 @@ export class ActionService {
   /**
    * Convert action from API to Action class
    */
-  private toAction(obj): Action {
+  private toAction(obj:any): Action {
     let action = new Action();
     action.id = obj.id;
     action.name = obj.name;
     action.short_description = obj.short_description||'';
     action.description = obj.description||'';
     action.type = obj.type||7;
-    action.dateStartTotal = new Date(obj.dateStart);
-    action.dayStart = ''+action.dateStartTotal.getDay()+'.'+action.dateStartTotal.getMonth();
-    action.timeStart = ''+action.dateStartTotal.getHours()+':'+action.dateStartTotal.getMinutes();
-    action.dateEndTotal = new Date(obj.dateEnd);
-    action.dayEnd = ''+action.dateEndTotal.getDay()+'.'+action.dateEndTotal.getMonth();
-    action.timeEnd = ''+action.dateEndTotal.getHours()+':'+action.dateEndTotal.getMinutes();
     action.route = obj.route||'';
     action.speedRange =  obj.speedRange||'';
     action.hard = obj.hard||'';
     action.routeLength = obj.routeLength||'';
     action.ownerUserId = obj.ownerUserId;
     action.ownerClubId = obj.ownerClubId||'';
+
+    if (!action.dateStartTotal){  // for test
+      let dt = new Date(Date.now() - 30*1000*60*60*24 + Math.floor(Math.random()*60*24*1000*60*60));
+      dt.setSeconds(0);
+      dt.setMinutes(0);
+      dt.setMilliseconds(0);
+      action.dateStartTotal = dt; 
+      action.dateEndTotal = new Date(action.dateStartTotal.getTime() + Math.floor(Math.random()*48)*2*1000*60*60);
+      action.dateEndTotal.setMinutes(0);
+    } else{
+      action.dateStartTotal = new Date(obj.dateStart);
+      action.dateEndTotal = new Date(obj.dateEnd);
+    }
+    action.fillDates();
     return action;
   }
 
@@ -125,6 +133,15 @@ export class ActionService {
   }
 
   private generateTestActions():void {  
-    // https://raw.githubusercontent.com/spineag/amberts/master/assets/server_temp/actions.json
+    this.http.get('https://raw.githubusercontent.com/spineag/amberts/master/assets/server_temp/actions.json')
+      .map(res => res.data)
+      .catch(this.handleError)
+      .subscribe(data => {
+        for (let i:number=0;i<data.length;i++){
+          this.actions.push(this.toAction(data[i]));
+        }
+        this.sortActions();
+        //console.log(this.actions);
+    });
   }
 }

@@ -11,11 +11,9 @@ export class Action {
   timeStart: string;    // only time
   timeEnd: string;      // only time
   route: string;
-
   speedRange: string; // 5:30 - 6:00 hv/km OR 20-25 km/hour
   hard: number; // 1-5 - no any need, it can be automatic later
   routeLength: string; // 10 km OR 50 - 55 km
-
   ownerUserId: string;
   ownerClubId: string;
 
@@ -24,17 +22,17 @@ export class Action {
                     '.'+this.norm(this.dateStartTotal.getMonth()+1)+
                     '.'+this.dateStartTotal.getFullYear();
     this.timeStart = ''+this.norm(this.dateStartTotal.getHours())+
-                    ':'+this.dateStartTotal.getMinutes();
+                    ':'+this.norm(this.dateStartTotal.getMinutes(),true);
     this.dayEnd = ''+this.norm(this.dateEndTotal.getDate())+
                   '.'+this.norm(this.dateEndTotal.getMonth()+1)+
                   '.'+this.dateEndTotal.getFullYear();
     this.timeEnd = ''+this.norm(this.dateEndTotal.getHours())+
-                  ':'+this.dateEndTotal.getMinutes()+'0';
+                  ':'+this.norm(this.dateEndTotal.getMinutes(),true);
   }
 
-  private norm(st:string|number):string{
+  norm(st:string|number,b?:boolean):string{
     st=''+st;
     if (st.length==1) return st;
-    else return '0'+st;
+    return b ? st+'0' : '0'+st;
   }
 }

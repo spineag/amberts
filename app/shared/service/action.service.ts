@@ -12,9 +12,6 @@ export class ActionService {
     this.generateTestActions();
   }
 
-  /**
-   * Get all actions
-   */
   getActions(): Observable<Action[]> {   // also release partial get actions. Example: first 20, then next 20, and next...
     return this.http.get(this.API_URL)
       .map(res => res.data)
@@ -38,9 +35,6 @@ export class ActionService {
     });
   }
 
-  /**
-   * Get a single Action 
-   */
   getAction(id: number): Observable<Action> {
     return this.http.get(`${this.API_URL}/${id}`)
       .map(res => res.data)
@@ -60,29 +54,23 @@ export class ActionService {
   // }
 
 
-  // create a user
   createAction(act: Action): Observable<Action> {
     return this.http.post(this.API_URL, act)
       .map(res => res.data)
       .catch(this.handleError)
   }
 
-  // update a user
   updateAction(act: Action): Observable<Action> {
     return this.http.put(`${this.API_URL}/${act.id}`, act)
       .map(res => res.data)
       .catch(this.handleError)
   }
 
-  // delete a user
   deleteAction(id: number): Observable<any> {
     return this.http.delete(`${this.API_URL}/${id}`)
       .catch(this.handleError);
   }
 
-  /**
-   * Convert action from API to Action class
-   */
   private toAction(obj:any): Action {
     let action = new Action();
     action.id = obj.id;
@@ -113,21 +101,13 @@ export class ActionService {
     return action;
   }
 
-
-  /**
-   * Handle any errors from the API
-   */
   private handleError(err) {
     let errorMessage: string;
-
     if (err instanceof HttpResponse) {
       let body:any = err || '';
       let error = body.error || JSON.stringify(body);
-
       errorMessage = `${err.status} - ${err.statusText} || ''} ${err}`;
-    } else {
-      errorMessage = err.message ? err.message : err.toString();
-    }
+    } else errorMessage = err.message ? err.message : err.toString();
 
     return Observable.throw(errorMessage)
   }

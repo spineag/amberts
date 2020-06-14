@@ -1,13 +1,15 @@
 <div class="event-item-cont">
-  <div class="inner">
+  <div class="row">
     <div>
-      <span class="event-item-name">{{action.name}}</span>
+      <div>
+        <span class="event-item-name">{{action.name}}</span>
+      </div>
+      <div>
+        <span class="event-time-description">{{action.short_description}}</span>
+      </div>
     </div>
     <div>
-      <span class="event-time-description">{{action.short_description}}</span>
+      <mat-icon class="mat-icon-item">{{getEventIcon()}}</mat-icon>
     </div>
-  </div>
-  <div>
-    <mat-icon class="mat-icon-item">{{getEventIcon()}}</mat-icon>
   </div>
 </div>

@@ -4,3 +4,11 @@
   margin: 2vh 3vh;
   padding:1vh;
 }
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.mat-icon-item{
+  
+}

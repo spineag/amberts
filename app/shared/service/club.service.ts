@@ -4,7 +4,7 @@ import { Observable } from 'rxjs/Observable';
 import { Club } from '../models/club';
 
 @Injectable()
-export class ActionService {
+export class ClubService {
   private API_URL: string = 'https://amberts/api/club'
   private clubs:Array<Club>=[];
 
@@ -14,6 +14,13 @@ export class ActionService {
 
   getClubsLocal():Array<Club> {
     return this.clubs;
+  }
+
+  getClubById(id:number):Club|null {
+    for (let i:number;i<this.clubs.length;i++){
+      if (this.clubs[i].id==id) return this.clubs[i];
+    }
+    return null;
   }
 
   private toClub(obj:any):Club {

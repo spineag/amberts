@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Action } from '../../shared/models/action';
+import { Club } from '../../shared/models/club';
+import { ClubService } from '../../shared/service/club.service';
 import { actionTypes } from '../../shared/static/objects';
 
 @Component({
@@ -9,10 +11,13 @@ import { actionTypes } from '../../shared/static/objects';
 })
 export class ListEventsItemComponent implements OnInit {
   @Input() action: Action;
+  private club:Club;
 
-  constructor() { }
+  constructor(private clubs:ClubService) {}
 
-  ngOnInit() { }
+  ngOnInit() {
+    this.club = this.clubs.getClubById(this.action.id);
+  }
 
   getEventIcon(){
     for (let i:number=0; i<actionTypes.length;i++){

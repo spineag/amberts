@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatIconModule } from '@angular/material/icon';
 
 import { ActionService } from './shared/service/action.service';
+import { ClubService } from './shared/service/club.service';
 
 import { routing } from './app.routing';
 import { AppComponent } from './app.component';
@@ -31,11 +32,9 @@ import 'rxjs/add/observable/throw';
     routing, MatIconModule
   ],
   declarations: [
-    AppComponent,StartComponent,StartMenuComponent,StartMenuItemComponent,
-    PageListEventsComponent,PageCreateEventComponent,ListEventsItemComponent,
-    TopLineTabsComponent,TopLineComponent,BottomLineMenuComponent,BottomLineSaveCancelComponent],
+    AppComponent, StartComponent, StartMenuComponent, StartMenuItemComponent, PageListEventsComponent, PageCreateEventComponent, ListEventsItemComponent, TopLineTabsComponent, TopLineComponent, BottomLineMenuComponent, BottomLineSaveCancelComponent],
   providers: [
-    ActionService
+    ActionService, ClubService
   ],
   bootstrap:    [ AppComponent ]
 })

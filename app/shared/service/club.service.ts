@@ -39,7 +39,7 @@ export class ActionService {
   }
 
   private generateTestClubs():void {  
-    this.http.get('https://raw.githubusercontent.com/spineag/amberts/master/assets/server_temp/actions.json')
+    this.http.get('https://raw.githubusercontent.com/spineag/amberts/master/assets/server_temp/clubs.json')
       .map(res => res.data)
       .catch(this.handleError)
       .subscribe(data => {

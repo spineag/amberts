@@ -1,1 +1,13 @@
-<div>test</div>
+<div class="event-item-cont">
+  <div class="inner">
+    <div>
+      <span class="event-item-name">{{action.name}}</span>
+    </div>
+    <div>
+      <span class="event-time-description">{{action.short_description}}</span>
+    </div>
+  </div>
+  <div>
+    <mat-icon class="mat-icon-item">{{getEventIcon()}}</mat-icon>
+  </div>
+</div>

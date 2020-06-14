@@ -1,0 +1,14 @@
+{"data":[
+    {
+      "id":1, "name":"Раес team", "short_description":"Велокоманда РАЕС", "description":"Велокоманда РАЕС, до составу якої входять велосипедисте з РАЕС. От така от не важка для розуміння ситуація :)", "avatar":"", "town":"Вараш", "country":"Ураїна"
+    },
+    {
+      "id":2, "name":"Admins", "short_description":"Тестова група", "description":"Тестова група тестування додатку", "avatar":"", "town":"Вараш", "country":"Ураїна"
+    },
+    {
+      "id":3, "name":"Amber Tri Sport", "short_description":"Клуб триатлону", "description":"Клуб любителів триатлону", "avatar":"", "town":"Вараш", "country":"Ураїна"
+    },
+    {
+      "id":4, "name":"Лосяндри", "short_description":"Велопокатушники по ***", "description":"Клуб любителів катнути дорогами, якими не коден танк проїде", "avatar":"", "town":"Вараш", "country":"Ураїна"
+    }
+]}

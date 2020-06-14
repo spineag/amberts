@@ -1,3 +1,4 @@
+// typeCion also can be "svg"
 export let actionTypes=[
   {id:1, type:'BIKE', nameUA:'Велосипед', icon:'directions_bike', typeIcon:'material'},
   {id:2, type:'RUN', nameUA:'Біг', icon:'directions_run', typeIcon:'material'},

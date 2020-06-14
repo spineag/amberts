@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Action } from '../../shared/models/action';
+import { actionTypes } from '../../shared/static/objects';
 
 @Component({
   selector: 'list-events-item',
@@ -12,5 +13,15 @@ export class ListEventsItemComponent implements OnInit {
   constructor() { }
 
   ngOnInit() { }
+
+  getEventIcon(){
+    for (let i:number=0; i<actionTypes.length;i++){
+      if (actionTypes[i].id==this.action.type) {
+        if (actionTypes[i].typeIcon=='material') return actionTypes[i].icon;
+        break;
+      }
+    }
+    return 'supervisor_account';
+  }
 
 }

@@ -1,0 +1,11 @@
+{"data":[
+    {
+      "id":1, "name":"Сергій", "lastname":"Пастерний", "description":"Веліка добрая людіна", "avatar":"", "town":"Вараш", "country":"Ураїна"
+    },
+    {
+      "id":2, "name":"Степан", "lastname":"Тюльпан", "description":"Бігунець морочний", "avatar":"", "town":"Рівне", "country":"Ураїна"
+    },
+     {
+      "id":3, "name":"Владзьо", "lastname":"Пекельний", "description":"Щось таке й сякий такий", "avatar":"", "town":"Рівне", "country":"Ураїна"
+    }
+]}

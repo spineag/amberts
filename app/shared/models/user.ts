@@ -1,6 +1,10 @@
 export class User {
   id: number;
-  name: string;
-  username: string;
-  avatar: string
+  firstname: string;
+  lastname: string;
+  avatar: string;
+  town: string;
+  country: string;
+  description: string;
+  login: string;  // must be same global var!
 }

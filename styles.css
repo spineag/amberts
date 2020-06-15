@@ -47,6 +47,7 @@
 .medium {font-weight:400;}
 .bold {font-weight:700;}
 .regular {font-weight:300;}
+.semibold {font-weight:500;}
 
 .outer_main_container{
   height:100vh;

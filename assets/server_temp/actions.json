@@ -1,13 +1,13 @@
 {
   "data":[
     {
-      "id":1, "name":"Action 1", "short_description":"", "description":"some description is here", "type":"1", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"1","ownerClubId":"1", "routeLength":"100km", "speedRange":"20-25"
+      "id":1, "name":"Action 1", "short_description":"", "description":"some description is here", "type":"1", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"1","ownerClubId":"1", "routeLength":"100", "speedRange":"20-25"
     },
     {
-      "id":2, "name":"Action 2", "short_description":"some short 2", "description":"some description is here", "type":"2", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"1","ownerClubId":"1", "routeLength":"10km", "speedRange":"6:30-7:00"
+      "id":2, "name":"Action 2", "short_description":"some short 2", "description":"some description is here", "type":"2", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"1","ownerClubId":"1", "routeLength":"10", "speedRange":"6:30-7:00"
     },
     {
-      "id":3, "name":"Action 3", "short_description":"aasdasd", "description":"some description is here asd asd asd as wqwf asfasfasfas as asfasfa", "type":"3", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"2","ownerClubId":"2", "routeLength":"5km", "speedRange":"2:30-4:00"
+      "id":3, "name":"Action 3", "short_description":"aasdasd", "description":"some description is here asd asd asd as wqwf asfasfasfas as asfasfa", "type":"3", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"2","ownerClubId":"2", "routeLength":"5", "speedRange":"2:30-4:00"
     },
     {
       "id":4, "name":"Action 4", "short_description":"", "description":"some description is here", "type":"4", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"1","ownerClubId":"2", "routeLength":"100"
@@ -22,10 +22,10 @@
       "id":7, "name":"Action 7", "short_description":"", "description":"some description is here", "type":"7", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"2","ownerClubId":"2"
     },
 {
-      "id":8, "name":"Action 8", "short_description":" sdsafsddfs ", "description":"some description is here", "type":"1", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"1","ownerClubId":"1", "routeLength":"100km", "speedRange":"20-25"
+      "id":8, "name":"Action 8", "short_description":" sdsafsddfs ", "description":"some description is here", "type":"1", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"1","ownerClubId":"1", "routeLength":"100", "speedRange":"20-25"
     },
     {
-      "id":9, "name":"Action 9", "short_description":"some short 2", "description":"some description is here", "type":"2", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"1","ownerClubId":"1", "routeLength":"10km", "speedRange":"6:30-7:00"
+      "id":9, "name":"Action 9", "short_description":"some short 2", "description":"some description is here", "type":"2", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"1","ownerClubId":"1", "routeLength":"10", "speedRange":"6:30-7:00"
     },
     {
       "id":10, "name":"Action 10", "short_description":"aasdasd", "description":"some description is here asd asd asd as wqwf asfasfasfas as asfasfa", "type":"3", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"2","ownerClubId":"2", "routeLength":"23", "speedRange":"2:30-4:00"
@@ -43,13 +43,13 @@
       "id":14, "name":"Action 14", "short_description":"", "description":"some description is here", "type":"7", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"2","ownerClubId":"2"
     },
     {
-      "id":15, "name":"Action 15", "short_description":"", "description":"some description is here", "type":"1", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"1","ownerClubId":"1", "routeLength":"67km", "speedRange":"20-25"
+      "id":15, "name":"Action 15", "short_description":"", "description":"some description is here", "type":"1", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"1","ownerClubId":"1", "routeLength":"67", "speedRange":"20-25"
     },
     {
-      "id":16, "name":"Action 16", "short_description":"some short 2", "description":"some description is here", "type":"2", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"1","ownerClubId":"1", "routeLength":"16km", "speedRange":"6:30-7:00"
+      "id":16, "name":"Action 16", "short_description":"some short 2", "description":"some description is here", "type":"2", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"1","ownerClubId":"1", "routeLength":"16", "speedRange":"6:30-7:00"
     },
     {
-      "id":17, "name":"Action 17", "short_description":"aasdasd", "description":"some description is here asd asd asd as wqwf asfasfasfas as asfasfa", "type":"3", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"2","ownerClubId":"2", "routeLength":"19km", "speedRange":"2:30-4:00"
+      "id":17, "name":"Action 17", "short_description":"aasdasd", "description":"some description is here asd asd asd as wqwf asfasfasfas as asfasfa", "type":"3", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"2","ownerClubId":"2", "routeLength":"19", "speedRange":"2:30-4:00"
     },
     {
       "id":18, "name":"Action 18", "short_description":"", "description":"some description is here", "type":"4", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"1","ownerClubId":"2", "routeLength":"29"

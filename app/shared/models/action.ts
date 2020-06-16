@@ -16,8 +16,8 @@ export class Action {
   hard: number; // 1-5 - no any need, it can be automatic later
   routeLength: string; // 10 km OR 50 - 55 km
   routeUnit: string;
-  ownerUserId: string;
-  ownerClubId: string;
+  ownerUserId: number;
+  ownerClubId: number;
 
   fillDates():void{
     this.dayStart = ''+this.norm(this.dateStartTotal.getDate())+
@@ -32,8 +32,13 @@ export class Action {
                   ':'+this.norm(this.dateEndTotal.getMinutes(),true);
   }
 
-  fillUnits(){
-
+  fillUnits():void{
+    switch (this.type){
+      case 1: this.routeUnit="км"; this.speedUnit="км/год"; break;
+      case 2: this.routeUnit="км"; this.speedUnit="хв/км"; break;
+      case 3: this.routeUnit="м";  this.speedUnit="хв/100м"; break;
+      default: ;   
+    }
   }
 
   norm(st:string|number,b?:boolean):string{

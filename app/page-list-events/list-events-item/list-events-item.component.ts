@@ -16,7 +16,8 @@ export class ListEventsItemComponent implements OnInit {
   constructor(private clubs:ClubService) {}
 
   ngOnInit() {
-    this.club = this.clubs.getClubById(this.action.id);
+    this.club = this.clubs.getClubById(this.action.ownerClubId);
+    console.log(this.club);
   }
 
   getEventIcon(){

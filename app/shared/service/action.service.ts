@@ -74,13 +74,13 @@ export class ActionService {
     action.name = obj.name;
     action.short_description = obj.short_description||'';
     action.description = obj.description||'';
-    action.type = obj.type||7;
+    action.type = +obj.type||7;
     action.route = obj.route||'';
     action.speedRange =  obj.speedRange||'';
-    action.hard = obj.hard||'';
+    action.hard = obj.hard||1;
     action.routeLength = obj.routeLength||'';
-    action.ownerUserId = obj.ownerUserId;
-    action.ownerClubId = obj.ownerClubId||'';
+    action.ownerUserId = obj.ownerUserId||0;
+    action.ownerClubId = obj.ownerClubId||0;
 
     if (!action.dateStartTotal){  // for test
       let dt = new Date(Date.now() - 30*1000*60*60*24 + Math.floor(Math.random()*60*24*1000*60*60));

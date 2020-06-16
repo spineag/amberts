@@ -25,11 +25,27 @@
 .row2{
   display: flex;
   flex-direction: row;
+  margin-top:.6vh;
 }
 .horizontal-align{
   display: flex;
   align-items: center;
 }
+.numbers {
+  font-size: 2.5vh;
+  margin:0 .5vh;
+}
+.units{
+  font-size: 2vh;
+}
 .mat-icon-item-small{
-  
+  font-size: 4vh;
+  color:var(--color16);
+  width:4vh;
+  height:4vh;
+}
+.row3{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

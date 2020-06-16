@@ -13,13 +13,28 @@
     </div>
   </div>
   <div class="row2">
-    <div class="horizontal-align">
+    <div *ngIf="action.routeLength" class="horizontal-align">
       <mat-icon class="mat-icon-item-small">timeline</mat-icon>
-      <span class="bold">{{action.routeLength}}</span>
+      <div>
+        <span class="bold numbers ats-color3">{{action.routeLength}}</span>
+        <span *ngIf="action.routeUnit" class="medium units ats-color3">{{action.routeUnit}}</span>
+      </div>
     </div>
-    <div class="horizontal-align">
-      <mat-icon class="mat-icon-item-small">access_time</mat-icon>
-      <span>{{action.speedRange}}</span>
+    <div *ngIf="action.speedRange" class="horizontal-align" style="margin-left:3vh;">
+      <mat-icon class="mat-icon-item-small">timer</mat-icon>
+      <div>
+        <span class="bold numbers ats-color3">{{action.speedRange}}</span>
+        <span *ngIf="action.speedUnit" class="medium units ats-color3">{{action.speedUnit}}</span>
+      </div>
+    </div>
+  </div>
+  <div class="row3">
+    <div>
+      <!-- <span>{{club.name}}</span> -->
+    </div>
+    <div>
+      <span>{{action.dayStart}}</span><br>
+      <span>{{action.timeStart}}</span>
     </div>
   </div>
 </div>

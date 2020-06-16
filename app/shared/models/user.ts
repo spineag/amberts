@@ -7,4 +7,5 @@ export class User {
   country: string;
   description: string;
   login: string;  // must be same global var!
+  language: 'UA';
 }

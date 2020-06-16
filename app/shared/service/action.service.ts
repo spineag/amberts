@@ -95,6 +95,7 @@ export class ActionService {
       action.dateEndTotal = new Date(obj.dateEnd);
     }
     action.fillDates();
+    action.fillUnits();
     return action;
   }
 

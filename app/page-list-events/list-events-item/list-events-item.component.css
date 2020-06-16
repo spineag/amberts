@@ -5,7 +5,7 @@
   padding:1vh;
 }
 .event-item-cont:hover { cursor:pointer; }
-.row{
+.row1{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -21,4 +21,15 @@
 }
 .event-time-description{
   font-size: 2.2vh;
+}
+.row2{
+  display: flex;
+  flex-direction: row;
+}
+.horizontal-align{
+  display: flex;
+  align-items: center;
+}
+.mat-icon-item-small{
+  
 }

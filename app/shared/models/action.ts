@@ -12,8 +12,10 @@ export class Action {
   timeEnd: string;      // only time
   route: string;
   speedRange: string; // 5:30 - 6:00 hv/km OR 20-25 km/hour
+  speedUnit: string;
   hard: number; // 1-5 - no any need, it can be automatic later
   routeLength: string; // 10 km OR 50 - 55 km
+  routeUnit: string;
   ownerUserId: string;
   ownerClubId: string;
 
@@ -28,6 +30,10 @@ export class Action {
                   '.'+this.dateEndTotal.getFullYear();
     this.timeEnd = ''+this.norm(this.dateEndTotal.getHours())+
                   ':'+this.norm(this.dateEndTotal.getMinutes(),true);
+  }
+
+  fillUnits(){
+
   }
 
   norm(st:string|number,b?:boolean):string{

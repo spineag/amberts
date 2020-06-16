@@ -11,14 +11,10 @@ import { actionTypes } from '../../shared/static/objects';
 })
 export class ListEventsItemComponent implements OnInit {
   @Input() action: Action;
-  private club:Club;
 
   constructor(private clubs:ClubService) {}
 
-  ngOnInit() {
-    this.club = this.clubs.getClubById(this.action.ownerClubId);
-    console.log(this.club);
-  }
+  ngOnInit() { }
 
   getEventIcon(){
     for (let i:number=0; i<actionTypes.length;i++){
@@ -28,6 +24,11 @@ export class ListEventsItemComponent implements OnInit {
       }
     }
     return 'supervisor_account';
+  }
+
+  getClubName():string {
+    let club:Club = this.clubs.getClubById(this.action.ownerClubId);
+    return club ? club.name : 'undefined';
   }
 
 }

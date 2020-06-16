@@ -1,67 +1,67 @@
 {
   "data":[
     {
-      "id":1, "name":"Action 1", "short_description":"", "description":"some description is here", "type":"1", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"1","ownerClubId":"1", "routeLength":"100", "speedRange":"20-25"
+      "id":1, "name":"Велопокатушка 1", "short_description":"Тренування сотки", "description":"some description is here", "type":"1", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"1","ownerClubId":"1", "routeLength":"100", "speedRange":"20-25"
     },
     {
-      "id":2, "name":"Action 2", "short_description":"some short 2", "description":"some description is here", "type":"2", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"1","ownerClubId":"1", "routeLength":"10", "speedRange":"6:30-7:00"
+      "id":2, "name":"Пробіжка 2", "short_description":"Тренувальна пробіжка на низькому пульсі", "description":"some description is here", "type":"2", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"1","ownerClubId":"3", "routeLength":"10", "speedRange":"6:30-7:00"
     },
     {
-      "id":3, "name":"Action 3", "short_description":"aasdasd", "description":"some description is here asd asd asd as wqwf asfasfasfas as asfasfa", "type":"3", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"2","ownerClubId":"2", "routeLength":"5", "speedRange":"2:30-4:00"
+      "id":3, "name":"Басейн 3", "short_description":"Поплавушки", "description":"some description is here asd asd asd as wqwf asfasfasfas as asfasfa", "type":"3", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"2","ownerClubId":"2", "routeLength":"5", "speedRange":"2:30-4:00"
     },
     {
-      "id":4, "name":"Action 4", "short_description":"", "description":"some description is here", "type":"4", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"1","ownerClubId":"2", "routeLength":"100"
+      "id":4, "name":"Похід 4", "short_description":"Дослідження рибацьких місць", "description":"some description is here", "type":"4", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"1","ownerClubId":"2", "routeLength":"100"
     },
     {
-      "id":5, "name":"Action 5", "short_description":"asd124asd 21412421", "description":"some description is here", "type":"15", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"2","ownerClubId":"1", "routeLength":"20"
+      "id":5, "name":"Кемпінг 5", "short_description":"З палатками на Біле озеро!", "description":"some description is here", "type":"5", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"2","ownerClubId":"1", "routeLength":"20"
     },
     {
-      "id":6, "name":"Action 6", "short_description":"", "description":"some description is here", "type":"6", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"1","ownerClubId":"1"
+      "id":6, "name":"Зустріч 6", "short_description":"Обговорення планів у кафе", "description":"some description is here", "type":"6", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"1","ownerClubId":"1"
     },
     {
-      "id":7, "name":"Action 7", "short_description":"", "description":"some description is here", "type":"7", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"2","ownerClubId":"2"
+      "id":7, "name":"Дикі танці 7", "short_description":"Розважально-відпочивальна програма", "description":"some description is here", "type":"7", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"2","ownerClubId":"2"
     },
 {
-      "id":8, "name":"Action 8", "short_description":" sdsafsddfs ", "description":"some description is here", "type":"1", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"1","ownerClubId":"1", "routeLength":"100", "speedRange":"20-25"
+      "id":8, "name":"Велопокатушка 8", "short_description":"Вдаримо по Куріному!", "description":"some description is here", "type":"1", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"1","ownerClubId":"1", "routeLength":"100", "speedRange":"20-25"
     },
     {
-      "id":9, "name":"Action 9", "short_description":"some short 2", "description":"some description is here", "type":"2", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"1","ownerClubId":"1", "routeLength":"10", "speedRange":"6:30-7:00"
+      "id":9, "name":"Пробіжка 9", "short_description":"Легенька пробіжка", "description":"some description is here", "type":"2", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"1","ownerClubId":"1", "routeLength":"10", "speedRange":"6:30-7:00"
     },
     {
-      "id":10, "name":"Action 10", "short_description":"aasdasd", "description":"some description is here asd asd asd as wqwf asfasfasfas as asfasfa", "type":"3", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"2","ownerClubId":"2", "routeLength":"23", "speedRange":"2:30-4:00"
+      "id":10, "name":"Басейн 10", "short_description":"Тренування техніки", "description":"some description is here asd asd asd as wqwf asfasfasfas as asfasfa", "type":"3", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"2","ownerClubId":"2", "routeLength":"23", "speedRange":"2:30-4:00"
     },
     {
-      "id":11, "name":"Action 11", "short_description":"", "description":"some description is here", "type":"4", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"1","ownerClubId":"2", "routeLength":"34"
+      "id":11, "name":"Похід 11", "short_description":"", "description":"Підйом на гору Хомецька", "type":"4", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"1","ownerClubId":"2", "routeLength":"34"
     },
     {
-      "id":12, "name":"Action 12", "short_description":"asd124asd 21412421", "description":"some description is here", "type":"5", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"2","ownerClubId":"1", "routeLength":"230"
+      "id":12, "name":"Кемпінг 12", "short_description":"Клубний виїзд на Шацькі", "description":"some description is here", "type":"5", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"2","ownerClubId":"1", "routeLength":"230"
     },
     {
-      "id":13, "name":"Action 13", "short_description":"", "description":"some description is here", "type":"6", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"1","ownerClubId":"1"
+      "id":13, "name":"Зустріч 13", "short_description":"День народження Михаська", "description":"some description is here", "type":"6", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"1","ownerClubId":"3"
     },
     {
-      "id":14, "name":"Action 14", "short_description":"", "description":"some description is here", "type":"7", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"2","ownerClubId":"2"
+      "id":14, "name":"Відкрита лекція 14", "short_description":"Гаражне велосипедобудування", "description":"some description is here", "type":"7", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"2","ownerClubId":"2"
     },
     {
-      "id":15, "name":"Action 15", "short_description":"", "description":"some description is here", "type":"1", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"1","ownerClubId":"1", "routeLength":"67", "speedRange":"20-25"
+      "id":15, "name":"Велопокатушка 15", "short_description":"", "description":"Цікавими місцями району", "type":"1", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"1","ownerClubId":"1", "routeLength":"67", "speedRange":"20-25"
     },
     {
-      "id":16, "name":"Action 16", "short_description":"some short 2", "description":"some description is here", "type":"2", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"1","ownerClubId":"1", "routeLength":"16", "speedRange":"6:30-7:00"
+      "id":16, "name":"Пробіжка 16", "short_description":"Трейлова пробіжка", "description":"some description is here", "type":"2", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"1","ownerClubId":"1", "routeLength":"16", "speedRange":"6:30-7:00"
     },
     {
-      "id":17, "name":"Action 17", "short_description":"aasdasd", "description":"some description is here asd asd asd as wqwf asfasfasfas as asfasfa", "type":"3", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"2","ownerClubId":"2", "routeLength":"19", "speedRange":"2:30-4:00"
+      "id":17, "name":"Басейн 17", "short_description":"Заняття з тренером", "description":"some description is here asd asd asd as wqwf asfasfasfas as asfasfa", "type":"3", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"2","ownerClubId":"2", "routeLength":"19", "speedRange":"2:30-4:00"
     },
     {
-      "id":18, "name":"Action 18", "short_description":"", "description":"some description is here", "type":"4", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"1","ownerClubId":"2", "routeLength":"29"
+      "id":18, "name":"Похід 18", "short_description":"По грибочки", "description":"some description is here", "type":"4", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"1","ownerClubId":"2", "routeLength":"29"
     },
     {
-      "id":19, "name":"Action 19", "short_description":"asd124asd 21412421", "description":"some description is here", "type":"5", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"2","ownerClubId":"1", "routeLength":"10"
+      "id":19, "name":"Шашлички 19", "short_description":"Піг-міт-Стир-івент ", "description":"some description is here", "type":"5", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"2","ownerClubId":"1", "routeLength":"10"
     },
     {
-      "id":20, "name":"Action 20", "short_description":"", "description":"some description is here", "type":"6", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"1","ownerClubId":"1"
+      "id":20, "name":"Зустріч 20", "short_description":"Піцерія 'Галицькі галушки'", "description":"some description is here", "type":"6", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"1","ownerClubId":"3"
     },
     {
-      "id":21, "name":"Action 21", "short_description":"", "description":"some description is here", "type":"7", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"2","ownerClubId":"2"
+      "id":21, "name":"Презентація 21", "short_description":"Юрій Ойцюсь про Поліьску Січ", "description":"some description is here", "type":"7", "dateStartTotal":"test", "dateEndTotal":"test", "ownerUserId":"2","ownerClubId":"2"
     }
   ]
 }

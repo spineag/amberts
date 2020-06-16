@@ -16,8 +16,8 @@ export class ClubService {
     return this.clubs;
   }
 
-  getClubById(id:number):Club|null {
-    for (let i:number;i<this.clubs.length;i++){
+  getClubById(id:number):Club{
+    for (let i:number=0;i<this.clubs.length;i++){
       if (this.clubs[i].id==id) return this.clubs[i];
     }
     return null;
@@ -53,7 +53,6 @@ export class ClubService {
         for (let i:number=0;i<data.length;i++){
           this.clubs.push(this.toClub(data[i]));
         }
-        console.log(this.clubs);
     });
   }
 }

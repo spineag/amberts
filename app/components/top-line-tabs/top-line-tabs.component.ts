@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'top-line-tabs',
@@ -10,10 +11,10 @@ export class TopLineTabsComponent implements OnInit {
   @Input() leftObjects: Array<any>;
   @Input() rightObjects: Array<any>;
   
-  constructor() { 
-    
-  }
+  constructor(private location: Location) { }
 
   ngOnInit() {}
+
+  goBack(){ this.location.back(); }
 
 }

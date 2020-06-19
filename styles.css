@@ -71,17 +71,7 @@ body{
   overflow:hidden;
 }
 
-body::-webkit-scrollbar-thumb{
-  background-color: var(--color14);
-}
-.action_cont_outer::-webkit-scrollbar-thumb{
-  background-color: var(--color14);
-}
-
-.action_cont_outer{
-  scrollbar-color: var(--color14);
-}
-
-body{
-  scrollbar-color: var(--color14);
-}
+body::-webkit-scrollbar-thumb{  background-color: var(--color14); }
+.action_cont_outer::-webkit-scrollbar-thumb{ background-color: var(--color14);}
+/* .action_cont_outer{ scrollbar-color: var(--color14);} */
+/* body{  scrollbar-color: var(--color14);} */

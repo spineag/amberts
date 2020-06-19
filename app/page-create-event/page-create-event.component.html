@@ -2,8 +2,8 @@
 
 <div class="content">
   <div class="main_info ts-color2">
-    <input type="text" id="event_name" name="event_name">
-    
+    <input type="text" id="event_name" name="event_name" size='33' maxLength='30' placeholder="Назва події" (keyup)="onPressKey($event)">
+    <div class="text_counter_div"><span class="text_counter" id="event_name_counter">0/30</span></div>
   </div> 
 </div>
 

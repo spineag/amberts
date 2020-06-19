@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'page-create-event',
@@ -9,6 +9,11 @@ export class PageCreateEventComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {
+  }
+
+  onPressKey_Name(event:any):void{
+
+  }
 
 }

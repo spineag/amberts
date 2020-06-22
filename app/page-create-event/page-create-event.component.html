@@ -2,9 +2,17 @@
 
 <div class="content">
   <div class="main_info ts-color2">
-    <input type="text" id="event_name" name="event_name" size='33' maxLength='30' placeholder="Назва події" (keyup)="onPressKey($event)">
-    <div class="text_counter_div"><span class="text_counter" id="event_name_counter">0/30</span></div>
+    <input type="text" id="event_name" name="event_name" size='33' maxLength='30' placeholder="Назва події" (keyup)="onPressKey($event)" (focus)="onFocus($event)" (focusout)="onFocusOut($event)" value="" autocomplete="off">
+    <div class="text_counter_div"><span class="text_counter" id="event_name_counter" hidden>0/30</span></div>
   </div> 
+  <div class="main_info ts-color2">
+    <input type="text" id="event_short" name="event_short" size='33' maxLength='30' placeholder="Короткий опис" (keyup)="onPressKey($event)" (focus)="onFocus($event)" (focusout)="onFocusOut($event)" value="" autocomplete="off">
+    <div class="text_counter_div"><span class="text_counter" id="event_short_counter" hidden>0/30</span></div>
+  </div> 
+  <div class="main_info ts-color2">
+    <textarea type="text" id="event_long" name="event_long" rows="1" cols="32" maxLength='256' placeholder="Повний опис" (keyup)="onPressKey($event)" (focus)="onFocus($event)" (focusout)="onFocusOut($event)" value="" autocomplete="off"></textarea>
+    <div class="text_counter_div"><span class="text_counter" id="event_long_counter" hidden>0/256</span></div>
+  </div>
 </div>
 
 <bottom-line-save-cancel></bottom-line-save-cancel>

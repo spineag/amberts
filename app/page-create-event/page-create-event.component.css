@@ -4,7 +4,12 @@
 .main_info{
   margin-top:3vh;
 }
-.main_info input{
+textarea{
+  font-family: Roboto;
+  line-height:5vh;
+  resize: none;
+ }
+.main_info input, .main_info textarea{
   border: .2vh solid var(--color5);
   border-radius: 1vh;
   font-size: 3vh;
@@ -12,12 +17,11 @@
   padding: 0 1.2vh;
   color: var(--color2);
 }
-.main_info input:focus{
+.main_info input:focus, .main_info textarea:focus{
   border-color: var(--color17);
   outline: none !important;
 }
-
-.main_info input::placeholder{
+.main_info input::placeholder, .main_info textarea::placeholder{
   font-size: 3vh;
   color: var(--color4);
   font-style: italic;

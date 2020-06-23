@@ -23,6 +23,8 @@
   --color16:#ffb900;
   --color17:#5fe3a1;
   --color18:#fefefe;
+
+  --screen_width:60vh;
 }
 
 .ats-color1 { color:var(--color1); }       .ats-bg-color1 { background-color:var(--color1); }
@@ -60,7 +62,7 @@
   height: 100%;
   margin:0 auto;
   padding:0;
-  width:60vh;
+  width:var(--screen_width);
   background-color: var(--color18);
   font-family: Roboto;
   overflow:hidden;

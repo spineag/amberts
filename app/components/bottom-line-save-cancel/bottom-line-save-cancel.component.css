@@ -2,7 +2,7 @@
   height: 8vh;
   position:fixed;
   bottom:0;
-  width:60vh;
+  width:var(--screen_width);
   display:flex;
   flex-direction: row;
   justify-content: space-between;

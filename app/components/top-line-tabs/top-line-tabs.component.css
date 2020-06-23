@@ -1,6 +1,6 @@
 .top-line-bg{
   height: 10vh;
-  width:60vh;
+  width:var(--screen_width);
   position:fixed;
   top:0;
   overflow: hidden;
